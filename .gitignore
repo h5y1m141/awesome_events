@@ -17,5 +17,6 @@
 /tmp
 /vendor
 
-
+# Ignore YAML files regading DB/Secrets
 config/database.yml
+config/secrets.yml

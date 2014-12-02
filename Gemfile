@@ -1,3 +1,4 @@
+# -*- coding: utf-8 -*-
 source 'https://rubygems.org'
 
 gem 'rails', '4.1.1'
@@ -14,3 +15,8 @@ gem 'twitter-bootstrap-rails'
 gem 'pry-rails'
 gem 'pry-byebug'
 gem 'unicorn'
+
+# ユーザ認証のため
+
+gem 'omniauth', '~> 1.2.1'
+gem 'omniauth-twitter', '~> 1.0.1'
