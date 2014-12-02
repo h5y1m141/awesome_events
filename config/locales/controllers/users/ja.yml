@@ -1,0 +1,10 @@
+ja:
+  users:
+    login:
+      success: 'ログインしました'
+      error: 'ログインに失敗しました'
+    logout:
+      success: 'ログアウトしました'
+      error: 'ログアウトできませんでした'
+    create:
+      notice: 'ログインしました'
