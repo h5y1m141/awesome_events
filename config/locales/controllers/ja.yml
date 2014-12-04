@@ -1,2 +1,6 @@
 ja:
-  hello: 'こんにちは'
+  controllers:
+    application:
+      alert: 'ログインしてください'
+
+
