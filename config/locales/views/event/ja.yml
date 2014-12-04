@@ -1,0 +1,8 @@
+ja:
+  views:
+    events:
+      form:
+        submit:
+          message: '作成'
+        disablewith:
+          message: '作成中・・・' 

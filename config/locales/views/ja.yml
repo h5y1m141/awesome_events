@@ -5,3 +5,7 @@ ja:
       logout: "ログアウト"
     event:
       create: "イベントを作る"
+      submit:
+        message: '作成'
+      creating:
+        message: '作成中・・・' 
