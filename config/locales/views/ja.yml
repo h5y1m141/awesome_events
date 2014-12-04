@@ -1,0 +1,7 @@
+ja:
+  views:
+    users:
+      login: "Twitterでログイン"
+      logout: "ログアウト"
+    event:
+      create: "イベントを作る"
