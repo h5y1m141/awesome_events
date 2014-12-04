@@ -15,6 +15,8 @@ Bundler.require(*Rails.groups)
 
 module AwesomeEvents
   class Application < Rails::Application
+    config.time_zone = 'Tokyo'
+
     I18n.load_path += Dir[Rails.root.join('config', 'locales', '**', '*.{rb,yml}').to_s]
     I18n.available_locales = [:en, :ja]
     I18n.enforce_available_locales = true
