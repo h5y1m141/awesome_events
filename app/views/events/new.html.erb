@@ -44,6 +44,6 @@
     <%= f.text_area :content, class: 'form-control', row: 10 %>
   </div>
 
-  <% f.submit '作成', class: 'btn btn-default', data: {disable_with: '作成中・・・'} %>
+  <%= f.submit t("views.event.submit.message"), class: 'btn btn-default', data: {disable_with: t("views.event.creating.message")} %>
 <% end %>
   
