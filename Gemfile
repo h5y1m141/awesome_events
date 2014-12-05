@@ -17,6 +17,8 @@ gem 'unicorn'
 gem 'omniauth', '~> 1.2.1'
 gem 'omniauth-twitter', '~> 1.0.1'
 
+gem "shoulda-matchers", "~> 2.6.0"
+
 group :development, :test do
   gem 'rspec-rails', '3.0.2'
   gem 'spring'
@@ -24,4 +26,7 @@ group :development, :test do
   gem 'pry-byebug'
   gem 'spring-commands-rspec'
   gem 'factory_girl_rails'
+  gem 'rubocop'
+  gem 'guard-rubocop'
+  gem 'terminal-notifier-guard'
 end
