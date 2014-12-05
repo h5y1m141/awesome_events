@@ -1,4 +1,4 @@
 ja:
   controllers:
     events:
-      create: '作成しました'
+      success: '作成しました'

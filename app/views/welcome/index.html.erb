@@ -1,2 +1,18 @@
-<h1>Welcome#index</h1>
-<p>ようこそ！</p>
+<div class="page-header">
+  <h1>
+    イベント一覧
+    （登録件数：<%= @events.length%>件）
+  </h1>
+</div>
+<div class="list-group">
+  <% @events.each do |event| %>
+    <%= link_to(event, class: 'list-group-item') do %>
+      <h4 class="list-group-item-heading">
+        <%= event.name %>
+      </h4>
+      <p class="list-group item-text">
+        
+      </p>
+    <% end %>
+  <% end %>
+</div>

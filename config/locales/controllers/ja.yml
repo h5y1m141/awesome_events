@@ -2,5 +2,6 @@ ja:
   controllers:
     application:
       alert: 'ログインしてください'
-
+    events:
+      success: 'イベント作成しました'
 
