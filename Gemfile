@@ -18,7 +18,7 @@ gem 'omniauth', '~> 1.2.1'
 gem 'omniauth-twitter', '~> 1.0.1'
 
 group :development, :test do
-  gem 'rspec-rails', '3.0.0'
+  gem 'rspec-rails', '3.0.2'
   gem 'spring'
   gem 'pry-rails'
   gem 'pry-byebug'

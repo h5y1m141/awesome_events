@@ -116,7 +116,7 @@ GEM
       rspec-support (~> 3.0.0)
     rspec-mocks (3.0.4)
       rspec-support (~> 3.0.0)
-    rspec-rails (3.0.0)
+    rspec-rails (3.0.2)
       actionpack (>= 3.0)
       activesupport (>= 3.0)
       railties (>= 3.0)
@@ -183,7 +183,7 @@ DEPENDENCIES
   pry-byebug
   pry-rails
   rails (= 4.1.1)
-  rspec-rails (= 3.0.0)
+  rspec-rails (= 3.0.2)
   sass-rails (~> 4.0.3)
   sdoc (~> 0.4.0)
   spring
