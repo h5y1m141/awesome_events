@@ -4,7 +4,7 @@ ja:
       login: "Twitterでログイン"
       logout: "ログアウト"
     event:
-      create: "イベントを作る"
+      create: 'イベントを作成'
       submit:
         message: '作成'
       creating:
