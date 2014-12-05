@@ -29,4 +29,6 @@ group :development, :test do
   gem 'rubocop'
   gem 'guard-rubocop'
   gem 'terminal-notifier-guard'
+  gem 'terminal-notifier'
+  gem 'guard-rspec', require: false
 end
