@@ -9,5 +9,7 @@ ja:
       remove: 'イベントを削除'
       submit:
         message: '作成'
+        update: '更新'
+      updating: '更新中'  
       creating:
-        message: '作成中・・・' 
+        message: '作成中・・・'

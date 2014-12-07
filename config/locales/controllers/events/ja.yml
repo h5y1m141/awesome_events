@@ -2,3 +2,4 @@ ja:
   controllers:
     events:
       success: '作成しました'
+      update: '更新しました'
