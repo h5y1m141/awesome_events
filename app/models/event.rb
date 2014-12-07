@@ -8,6 +8,11 @@ class Event < ActiveRecord::Base
   validates :end_time   , presence: true
   validate  :start_time_should_be_before_and_time
 
+  def created_by?(user)
+    return false unless user
+    owner_id == user.id
+  end
+  
   private
 
   def start_time_should_be_before_and_time
@@ -17,5 +22,6 @@ class Event < ActiveRecord::Base
       errors.add(:start_time, 'は終了時間よりも前に設定してください')
     end
   end
+  
 
 end

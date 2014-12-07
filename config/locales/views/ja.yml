@@ -5,6 +5,8 @@ ja:
       logout: "ログアウト"
     event:
       create: 'イベントを作成'
+      edit: 'イベントを編集'
+      remove: 'イベントを削除'
       submit:
         message: '作成'
       creating:
