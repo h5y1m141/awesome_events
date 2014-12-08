@@ -51,6 +51,33 @@
       <%= link_to t("views.event.edit") , edit_event_path(@event), class: 'btn btn-info btn-lg btn-block' %>
       <%= link_to t("views.event.destory.message") , event_path(@event), class: 'btn btn-danger btn-lg btn-block', method: :delete, data: { confirm: t("views.event.destory.confirmmessage")} %>
     <% end %>
+
+    <% if logged_in? %>
+
+      <button id="attendBtn" class="btn btn-primary btn-lg btn-block" data-toggle="modal" data-target="#createTicket">
+        参加する
+      </button>
+      <div id="div-modal" class="modal fade"> 
+        <div class="modal-dialog">
+          <div class="modal-content">
+            <div class="modal-header">
+              <button type="button" class="close" data-dismiss="modal" aria-hidden="true">&times;</button>
+              <h4 class="modal-title">参加コメント</h4>
+            </div>
+            <%= form_for(@event.tickets.build, url: event_tickets_path(@event), remote: true) do |f| %>
+              <div class="modal-body">
+                <%= f.text_field :comment , class: 'form-control' %>
+              </div>
+              <div class="modal-footer">
+                <button type="button" class="btn btn-default" data-dismiss="modal">キャンセル</button>
+                <%= f.button t("views.event.formsend"), class: 'btn btn-primary', data: {disable_with: t("views.event.sending") } %>
+              </div>
+            <%end%>
+          </div><!-- /.modal-content -->
+        </div><!-- /.modal-dialog -->
+    <% else %>
+      <%= link_to t("views.event.attend") , new_event_ticket_path(@event), class: 'btn btn-primary btn-lg btn-block' %>      
+    <% end %>      
   </div>
 </div>
 
