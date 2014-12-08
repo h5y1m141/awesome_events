@@ -6,7 +6,9 @@ ja:
     event:
       create: 'イベントを作成'
       edit: 'イベントを編集'
-      remove: 'イベントを削除'
+      destory:
+        message: 'イベントを削除'
+        confirmmessage: '本当に削除しますか？'
       submit:
         message: '作成'
         update: '更新'
