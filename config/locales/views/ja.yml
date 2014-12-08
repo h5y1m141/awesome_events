@@ -5,7 +5,13 @@ ja:
       logout: "ログアウト"
     event:
       create: 'イベントを作成'
+      edit: 'イベントを編集'
+      destory:
+        message: 'イベントを削除'
+        confirmmessage: '本当に削除しますか？'
       submit:
         message: '作成'
+        update: '更新'
+      updating: '更新中'  
       creating:
-        message: '作成中・・・' 
+        message: '作成中・・・'
