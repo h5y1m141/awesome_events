@@ -11,9 +11,9 @@ gem 'jbuilder', '~> 2.0'
 gem 'sdoc', '~> 0.4.0',          group: :doc
 gem 'twitter-bootstrap-rails'
 gem 'unicorn'
+gem 'jquery-rails'
 
 # ユーザ認証のため
-
 gem 'omniauth', '~> 1.2.1'
 gem 'omniauth-twitter', '~> 1.0.1'
 
