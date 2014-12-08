@@ -30,6 +30,12 @@ class EventsController < ApplicationController
       render :edit
     end
   end
+
+  def destroy
+    @event = current_user.created_events.find(params[:id])
+    @event.destroy!
+    redirect_to root_path, notice: t("controllers.events.destory")
+  end
   
   private
   
