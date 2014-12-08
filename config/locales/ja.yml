@@ -27,6 +27,10 @@ ja:
           blank: "が記入されていません。"
           invalid: "が不正な値です。"
           confirmation: "が一致しません。"
+        ticket:
+          attributes:
+            comment:
+              too_long: 'が長過ぎます'
     models:
       user: "ユーザー"
       event: "イベント"
@@ -53,6 +57,8 @@ ja:
         state:  "状態"
         created_at: "作成日時"
         updated_at: "更新日時"
+      ticket:
+        comment: コメント
     flash:
       user:
         actions:
