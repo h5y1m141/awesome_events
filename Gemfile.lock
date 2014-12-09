@@ -78,6 +78,12 @@ GEM
       activesupport (>= 3.0.0, < 5)
       multi_json (~> 1.2)
     json (1.8.1)
+    kaminari (0.15.1)
+      actionpack (>= 3.0.0)
+      activesupport (>= 3.0.0)
+    kaminari-bootstrap (3.0.1)
+      kaminari (>= 0.13.0)
+      rails
     kgio (2.9.2)
     listen (2.8.3)
       celluloid (>= 0.15.2)
@@ -229,6 +235,8 @@ DEPENDENCIES
   guard-rspec
   guard-rubocop
   jbuilder (~> 2.0)
+  kaminari (~> 0.15.1)
+  kaminari-bootstrap (~> 3.0.1)
   mysql2
   omniauth (~> 1.2.1)
   omniauth-twitter (~> 1.0.1)
