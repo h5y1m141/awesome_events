@@ -1,0 +1,5 @@
+ja:
+  controllers:
+    tickets:
+      create: 'このイベントに参加表明しました'
+      cancel: 'このイベントの参加をキャンセルしました'

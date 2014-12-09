@@ -4,4 +4,5 @@ ja:
       alert: 'ログインしてください'
     events:
       success: 'イベント作成しました'
-
+      update: '更新しました'
+      destory: '削除しました'
