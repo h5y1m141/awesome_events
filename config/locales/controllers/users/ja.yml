@@ -9,3 +9,5 @@ ja:
         error: 'ログアウトできませんでした'
       create:
         notice: 'ユーザを作成しました'
+      retire:
+        notice: '退会完了しました'

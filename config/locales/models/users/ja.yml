@@ -1,0 +1,13 @@
+ja:
+  model:
+    users:
+      retire:
+        created_event_error: '公開中の未終了イベントが存在します'
+        participating_event_error: '未終了の参加イベントが存在します'
+      logout:
+        success: 'ログアウトしました'
+        error: 'ログアウトできませんでした'
+      create:
+        notice: 'ユーザを作成しました'
+      retire:
+        notice: 'ユーザを作成しました'

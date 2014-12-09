@@ -23,6 +23,7 @@
         <ul class="nav navbar-nav navbar-right">
           <li><%= link_to t("views.event.create"), new_event_path %></li>
           <% if logged_in? %>
+            <li><%= link_to t("views.users.retire"), retire_user_path %></li>
             <li><%= link_to t("views.users.logout"), logout_path %></li>
           <% else %>
             <li><%= link_to t("views.users.login"), '/auth/twitter' %></li>

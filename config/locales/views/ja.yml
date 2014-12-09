@@ -1,8 +1,9 @@
 ja:
   views:
     users:
-      login: "Twitterでログイン"
-      logout: "ログアウト"
+      login: 'Twitterでログイン'
+      logout: 'ログアウト'
+      retire: '退会'
     event:
       create: 'イベントを作成'
       edit: 'イベントを編集'
