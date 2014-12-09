@@ -1,6 +1,6 @@
 # -*- coding: utf-8 -*-
 class TicketsController < ApplicationController
-  before_action :authenticate
+  before_action :authenticate, except: :show
   
   def new
     raise ActionController::RoutingError, 'ログイン状態でTicketsController#newにアクセス'
@@ -19,4 +19,6 @@ class TicketsController < ApplicationController
       render json: { messages: ticket.errors.full_messages }, status: 422
     end
   end
+
+
 end
