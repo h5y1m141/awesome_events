@@ -13,6 +13,7 @@ gem 'twitter-bootstrap-rails'
 gem 'unicorn'
 gem 'kaminari', '~> 0.15.1'
 gem 'kaminari-bootstrap', '~> 3.0.1'
+gem 'carrierwave', '~> 0.10.0'
 
 # ユーザ認証のため
 gem 'omniauth', '~> 1.2.1'
