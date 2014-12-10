@@ -1,5 +1,6 @@
 # -*- coding: utf-8 -*-
 class Event < ActiveRecord::Base
+  mount_uploader :event_image, EventImageUploader
   has_many :tickets, dependent: :destroy
   belongs_to :owner, class_name: 'User'
   validates :name       , length: { maximum: 50 }, presence: true
@@ -8,6 +9,8 @@ class Event < ActiveRecord::Base
   validates :start_time , presence: true
   validates :end_time   , presence: true
   validate  :start_time_should_be_before_and_time
+  validate  :check_image_dimensions, on: :create
+  
 
   def created_by?(user)
     return false unless user
@@ -24,5 +27,8 @@ class Event < ActiveRecord::Base
     end
   end
   
-
+  def check_image_dimensions
+    ::Rails.logger.info "Image upload dimensions: #{event_image.geometry[:width]}x#{event_image.geometry[:height]}"
+    errors.add :event_image, '400x400ピクセル以上のサイズの画像をアップロードしてください' if event_image.geometry[:width] < 400 || event_image.geometry[:height] < 400    
+  end
 end
