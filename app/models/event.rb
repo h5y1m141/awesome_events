@@ -1,6 +1,6 @@
 # -*- coding: utf-8 -*-
 class Event < ActiveRecord::Base
-  mount_uploader :event_image, EventImageUploader
+
   has_many :tickets, dependent: :destroy
   belongs_to :owner, class_name: 'User'
   validates :name       , length: { maximum: 50 }, presence: true
@@ -9,6 +9,8 @@ class Event < ActiveRecord::Base
   validates :start_time , presence: true
   validates :end_time   , presence: true
   validate  :start_time_should_be_before_and_time
+
+  mount_uploader :event_image, EventImageUploader
 
   def created_by?(user)
     return false unless user
