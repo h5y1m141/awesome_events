@@ -153,6 +153,7 @@ GEM
       ffi (>= 0.5.0)
     rdoc (4.1.2)
       json (~> 1.4)
+    rmagick (2.13.4)
     rspec (3.0.0)
       rspec-core (~> 3.0.0)
       rspec-expectations (~> 3.0.0)
@@ -249,6 +250,7 @@ DEPENDENCIES
   pry-byebug
   pry-rails
   rails (= 4.1.1)
+  rmagick
   rspec-rails (= 3.0.2)
   rubocop
   sass-rails (~> 4.0.3)
