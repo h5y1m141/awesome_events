@@ -2,8 +2,8 @@
 
 class EventImageUploader < CarrierWave::Uploader::Base
   include CarrierWave::RMagick
-  storage :file
-  # storage :fog
+  # storage :file
+  storage :fog
   process convert: 'jpg'
 
 

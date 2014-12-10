@@ -9,7 +9,7 @@ class Event < ActiveRecord::Base
   validates :start_time , presence: true
   validates :end_time   , presence: true
   validate  :start_time_should_be_before_and_time
-  validate  :check_image_dimensions
+  validate  :check_image_dimensions, on: :create
   
 
   def created_by?(user)

@@ -15,6 +15,7 @@ gem 'kaminari', '~> 0.15.1'
 gem 'kaminari-bootstrap', '~> 3.0.1'
 gem 'carrierwave', '~> 0.10.0'
 gem 'rmagick', require: 'RMagick'
+gem 'fog'
 
 # ユーザ認証のため
 gem 'omniauth', '~> 1.2.1'
